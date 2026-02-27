@@ -1,0 +1,33 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://b65aki4mveatd"]
+
+[ext_resource type="FontFile" uid="uid://c8tqe2mnbe8p" path="res://SpecialElite-Regular.ttf" id="1_g26ea"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0rx7n"]
+content_margin_top = 15.0
+content_margin_bottom = 15.0
+bg_color = Color(0.7420288, 0.7301339, 0.6528174, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.15686275, 0.21176471, 0.09411765, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g26ea"]
+content_margin_top = 15.0
+content_margin_bottom = 15.0
+bg_color = Color(0.99607843, 0.98039216, 0.8784314, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.15686275, 0.21176471, 0.09411765, 1)
+
+[resource]
+default_font = ExtResource("1_g26ea")
+Button/colors/font_color = Color(0.3764706, 0.42352942, 0.21960784, 1)
+Button/colors/font_hover_color = Color(0.15686275, 0.21176471, 0.09411765, 1)
+Button/colors/font_hover_pressed_color = Color(0.15686275, 0.21176471, 0.09411765, 1)
+Button/fonts/font = ExtResource("1_g26ea")
+Button/styles/hover = SubResource("StyleBoxFlat_0rx7n")
+Button/styles/normal = SubResource("StyleBoxFlat_g26ea")
+RichTextLabel/colors/default_color = Color(0.3764706, 0.42352942, 0.21960784, 1)

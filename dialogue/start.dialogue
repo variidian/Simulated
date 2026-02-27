@@ -1,0 +1,30 @@
+~ start
+Ivy: Hey! Clover - you have to wake up! Mom said to get back before dark. 
+#zoom on clover's eyes
+Clover: ... z..zz..zzzz 
+#snore zzzz animation?
+- Wake up Clover with a shout.
+	Ivy: CLOVER!! 
+	#shout words get bigger type animation?
+- Let clover sleep.
+	Ivy: Ugh. i'll let you sleep - for now. 
+	Ivy: ... .... .. An hour passes.
+	Ivy: ..
+	Ivy: CLOVER!! 
+	# shout words get bigger animation
+Ivy: PLEASE wake up. You did this yesterday too you're -
+Clover: Hueh?
+Ivy: just always falling asleep.
+Clover: I'm sorry. 
+Ivy: you said that yesterday too.
+Clover: I'm sorry.
+Ivy: ugh. Its alright Clover. Just PLEASE don't fall asleep on the way home.
+=> END
+#to realise its a simulation:
+# patterns of characters saying the same lines, the same behaviours
+# Events bend toward certain outcomes. - Attempts to leave town fail via coincidence.
+# glitches of object colour + placement
+# loss of memory + remembering stuff that never happened
+# MC PROVING IT:
+# predict character lines.
+# attempt random lines to test responses
