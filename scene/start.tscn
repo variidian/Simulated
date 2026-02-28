@@ -117,10 +117,10 @@ script = ExtResource("1_1picq")
 [node name="main_bg" type="AnimatedSprite2D" parent="."]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_3mxyr")
+animation = &"openeyes"
 
 [node name="text" type="AnimatedSprite2D" parent="."]
+modulate = Color(0.15686275, 0.21176471, 0.09411765, 1)
 position = Vector2(963, 546)
 sprite_frames = SubResource("SpriteFrames_vil18")
-animation = &"shout_name"
-frame = 13
-frame_progress = 1.0
+animation = &"sleep"

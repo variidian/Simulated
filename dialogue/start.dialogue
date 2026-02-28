@@ -18,24 +18,37 @@ Clover: I'm sorry.
 Ivy: you said that yesterday too.
 Clover: ... I'm sorry.
 Ivy: ugh. Its alright Clover. Just PLEASE don't fall asleep on the way home.
-Clover: Okay. 
+Clover: Okay. Don't worry, we aren't even that far out.
 do global.house.emit(to_house)
-Ivy: Welp. here we are. And... its bright daylight? I could've SWORN that it was about to turn dark.
-Clover: No? i'm sure it was bright out.
-Ivy: Huh? ... Okay. Anyways, wheres mom gone? She should be here. 
-Clover: ...She went out to the grocery store. Just wait a while, i'm sure she'll be back soon.
-Ivy: Hm.. Can we go out to the city then? 
+Ivy: Welp. here we are.
+- Wait - is the time of day right? 
+	Ivy: And... its bright daylight? I could've SWORN that it was about to turn dark.
+	Clover: No? i'm sure it was bright out. A nice sunny morning.
+	Ivy: Huh? ... Okay.
+- Where's mom at?
+	Ivy: Anyways, wheres mom gone? She should be here. 
+	Clover: ...She went out to the grocery store. Just wait a while, i'm sure she'll be back soon.
+	Ivy: Well- if we have the time for it- Can we go out to the city?
 #flash to a city skyline and back
 Clover: ..I think its better if we didn't...
-Ivy: nono, let's go!
-Clover: .. ....
-Clover: Actually, the metro station is closed today.
-Ivy: Oh, don't worry about it. I'm sure we can get to a bus stop then take a train-
-Clover: Sorry, thats closed today too.
-Ivy: .. ...What happened? Why is everything closed today?
-Clover: Some car crashes.
-Ivy: Multiple? ??
-Clover: 6 of them. 7 to be more exact.
+- No!
+	Ivy: nono, let's go!
+	Clover: .. ....
+	Clover: Actually, the metro station is closed today.
+	Ivy: Oh, don't worry about it. I'm sure we can get to a bus stop then take a train-
+	Clover: Sorry, thats closed today too. Just a few car crashes today - 18. It's better if we just wait here.
+- Okay
+	Ivy: .. ....Ok.. but why?
+	Clover: .. I just don't think that would be a good idea.
+#night cycle
+Narrator: A day passes.
+Ivy: Can we go to the city today?
+Clover: Nonono, Its pretty dangerous to drive a car over there- 
+Ivy: I'll be careful, Clover.
+Clover: ..Just trust me.
+Ivy: .. ...
+Ivy [internally]: what's happening? why won't she let me go out of town with her? ... Surely something is wrong.
+
 
 => END
 #to realise its a simulation:
