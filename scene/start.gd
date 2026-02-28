@@ -8,8 +8,11 @@ func _ready() -> void:
 	text_changes.play("sleep")
 	global.eyes.connect(open_eyes)
 	global.shout.connect(shout_name)
+	global.house.connect(to_house)
 func open_eyes(_data = null):
 	main_bg_changes.play("openeyes")
 	text_changes.hide()
 func shout_name(_data = null):
 	text_changes.play("shout_name")
+func to_house(_data = null):
+	main_bg_changes.play("house")

@@ -1,28 +1,42 @@
 ~ start
 Ivy: Hey! Clover - you have to wake up! Mom said to get back before dark. 
-#zoom on clover's eyes
 Clover: ... z..zz..zzzz 
-#snore zzzz animation?
 - Wake up Clover with a shout.
 	do global.shout.emit(shout_name)
 	Ivy: CLOVER!!
-	
-	#shout words get bigger type animation?
 - Let clover sleep.
 	Ivy: Ugh. i'll let you sleep - for now. 
 	Ivy: ... .... .. An hour passes.
 	Ivy: ..
 	do global.shout.emit(shout_name)
 	Ivy: CLOVER!! 
-	# shout words get bigger animation
 Ivy: PLEASE wake up. You did this yesterday too you're -
 do global.eyes.emit(open_eyes)
 Clover: Hueh?
 Ivy: just always falling asleep.
 Clover: I'm sorry. 
 Ivy: you said that yesterday too.
-Clover: I'm sorry.
+Clover: ... I'm sorry.
 Ivy: ugh. Its alright Clover. Just PLEASE don't fall asleep on the way home.
+Clover: Okay. 
+do global.house.emit(to_house)
+Ivy: Welp. here we are. And... its bright daylight? I could've SWORN that it was about to turn dark.
+Clover: No? i'm sure it was bright out.
+Ivy: Huh? ... Okay. Anyways, wheres mom gone? She should be here. 
+Clover: ...She went out to the grocery store. Just wait a while, i'm sure she'll be back soon.
+Ivy: Hm.. Can we go out to the city then? 
+#flash to a city skyline and back
+Clover: ..I think its better if we didn't...
+Ivy: nono, let's go!
+Clover: .. ....
+Clover: Actually, the metro station is closed today.
+Ivy: Oh, don't worry about it. I'm sure we can get to a bus stop then take a train-
+Clover: Sorry, thats closed today too.
+Ivy: .. ...What happened? Why is everything closed today?
+Clover: Some car crashes.
+Ivy: Multiple? ??
+Clover: 6 of them. 7 to be more exact.
+
 => END
 #to realise its a simulation:
 # patterns of characters saying the same lines, the same behaviours
