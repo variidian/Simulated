@@ -17,39 +17,59 @@ Ivy: just always falling asleep.
 Clover: I'm sorry. 
 Ivy: you said that yesterday too.
 Clover: ... I'm sorry.
+do global.eyes1.emit(close_eyes)
 Ivy: ugh. Its alright Clover. Just PLEASE don't fall asleep on the way home.
 Clover: Okay. Don't worry, we aren't even that far out.
+do global.black.emit(to_black)
+Narrator: You travel back home with Clover...
 do global.house.emit(to_house)
 Ivy: Welp. here we are.
 - Wait - is the time of day right? 
 	Ivy: And... its bright daylight? I could've SWORN that it was about to turn dark.
+	Clover: ..
 	Clover: No? i'm sure it was bright out. A nice sunny morning.
-	Ivy: Huh? ... Okay.
+	Ivy: Huh? ... Okay. Anyways..
 - Where's mom at?
 	Ivy: Anyways, wheres mom gone? She should be here. 
 	Clover: ...She went out to the grocery store. Just wait a while, i'm sure she'll be back soon.
+	Ivy [internally]: What? how would you know that if you were asleep?
 	Ivy: Well- if we have the time for it- Can we go out to the city?
-#flash to a city skyline and back
+#flash to a city skyline and back?
+Clover: .....
 Clover: ..I think its better if we didn't...
 - No!
-	Ivy: nono, let's go!
+	Ivy: .. .nono, i think its a great idea.  let's go!
 	Clover: .. ....
 	Clover: Actually, the metro station is closed today.
 	Ivy: Oh, don't worry about it. I'm sure we can get to a bus stop then take a train-
-	Clover: Sorry, thats closed today too. Just a few car crashes today - 18. It's better if we just wait here.
-- Okay
-	Ivy: .. ....Ok.. but why?
-	Clover: .. I just don't think that would be a good idea.
-#night cycle
-Narrator: A day passes.
-Ivy: Can we go to the city today?
+	Clover: Sorry, thats closed today too. Just a few car crashes today. It's better if we just wait here.
+- Why not?
+	Ivy: huh? Why not?
+	Clover: .. I just don't think that would be a good idea today. Trust me.
+	Ivy: Uhh.. Okay? thats not really the answer i was looking for..
+do global.night.emit(to_night)
+Narrator: It passes into the night.
+Ivy: Sigh. lets hope we can go out tomorrow in the day time.
+do global.day.emit(to_day)
+Narrator: It passes into the day.
+Ivy: Can we go to the city today, Clover?
 Clover: Nonono, Its pretty dangerous to drive a car over there- 
-Ivy: I'll be careful, Clover.
+Ivy: I'll be careful.
 Clover: ..Just trust me.
 Ivy: .. ...
 Ivy [internally]: what's happening? why won't she let me go out of town with her? ... Surely something is wrong.
+do global.eyes.emit(open_eyes)
+Ivy: Clover, are you okay? What's wrong? 
+Clover: Hueh? ... .. Nothing's wrong. I'm just scared for your safety. Lots of robbers these days-
+Ivy: No, im sure you were just talking about cars-
+do global.eyes1.emit(close_eyes)
+Clover: No no, i'm pretty sure i said robbers.
+Ivy [internally]: she's going to tell me to trust her isn't she-
+Clover: .. ..Trust me.
+Ivy: Hmph. ..... Welp, i'm going to the city whether you like it or not. 
+Clover: 
 
-
+#try leave -> clover freezes ivy -> initiate attacks n combat <3
 => END
 #to realise its a simulation:
 # patterns of characters saying the same lines, the same behaviours

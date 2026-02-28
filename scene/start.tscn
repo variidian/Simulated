@@ -1,20 +1,26 @@
-[gd_scene load_steps=19 format=3 uid="uid://ceqy8exj41wyf"]
+[gd_scene load_steps=25 format=3 uid="uid://ceqy8exj41wyf"]
 
 [ext_resource type="Script" uid="uid://bu8m0e6gfmk0s" path="res://scene/start.gd" id="1_1picq"]
 [ext_resource type="Texture2D" uid="uid://cmmfj12rkhysg" path="res://simulated-assests/Untitled_Artwork(1).png" id="1_srnb1"]
+[ext_resource type="Texture2D" uid="uid://bweqt6yxauayq" path="res://simulated-assests/black.png" id="2_3ybje"]
 [ext_resource type="Texture2D" uid="uid://gdda0qaj7ali" path="res://simulated-assests/Untitled_Artwork.png" id="2_7xr4q"]
 [ext_resource type="Texture2D" uid="uid://b0ik5fxhf2fnx" path="res://simulated-assests/Untitled_Artwork(2).png" id="3_w484r"]
+[ext_resource type="Texture2D" uid="uid://cttoeevueibt4" path="res://simulated-assests/u1.png" id="4_p7wv6"]
 [ext_resource type="Texture2D" uid="uid://kvosoi8iqhb" path="res://simulated-assests/Untitled_Artwork-1(1).png" id="4_pb375"]
 [ext_resource type="Texture2D" uid="uid://b1lboyrerpsq8" path="res://simulated-assests/Untitled_Artwork-1.png" id="4_vil18"]
 [ext_resource type="Texture2D" uid="uid://b1ocscnjfgrp5" path="res://simulated-assests/Untitled_Artwork-2.png" id="5_1picq"]
+[ext_resource type="Texture2D" uid="uid://c64pybtocfin3" path="res://simulated-assests/u2.png" id="5_3ybje"]
 [ext_resource type="Texture2D" uid="uid://dskjq645ryib6" path="res://simulated-assests/Untitled_Artwork-2(1).png" id="5_pum5v"]
 [ext_resource type="Texture2D" uid="uid://8ch283wq6nh5" path="res://simulated-assests/Untitled_Artwork-3.png" id="6_ik5t3"]
+[ext_resource type="Texture2D" uid="uid://rsqg0e7wjytv" path="res://simulated-assests/u3.png" id="6_qsw7q"]
 [ext_resource type="Texture2D" uid="uid://bp8om3our36fa" path="res://simulated-assests/Untitled_Artwork-3(1).png" id="6_qymjl"]
+[ext_resource type="Texture2D" uid="uid://cpkwwkprkculv" path="res://simulated-assests/u4.png" id="7_axac1"]
 [ext_resource type="Texture2D" uid="uid://dniwtmfxr1065" path="res://simulated-assests/Untitled_Artwork-4.png" id="7_h10yh"]
 [ext_resource type="Texture2D" uid="uid://62rsdnttvenv" path="res://simulated-assests/Untitled_Artwork-5.png" id="8_hf7vm"]
 [ext_resource type="Texture2D" uid="uid://cvc0i6rvjra4g" path="res://simulated-assests/Untitled_Artwork-6.png" id="9_p7wv6"]
 [ext_resource type="Texture2D" uid="uid://bvvp0h76kjrax" path="res://simulated-assests/Untitled_Artwork-7.png" id="10_3ybje"]
 [ext_resource type="Texture2D" uid="uid://usdfokt3gy3r" path="res://simulated-assests/Untitled_Artwork-8.png" id="11_qsw7q"]
+[ext_resource type="Script" uid="uid://l6u8mai7obnx" path="res://scene/camera_2d.gd" id="21_qsw7q"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lrosg"]
 atlas = ExtResource("1_srnb1")
@@ -22,6 +28,48 @@ region = Rect2(0, 0, 1920, 1080)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3mxyr"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3ybje")
+}],
+"loop": true,
+"name": &"black",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_srnb1")
+}],
+"loop": false,
+"name": &"closeeyes",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_axac1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_axac1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_axac1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qsw7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qsw7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3ybje")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_p7wv6")
+}],
+"loop": false,
+"name": &"day",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_lrosg")
@@ -37,6 +85,23 @@ animations = [{
 "loop": true,
 "name": &"house",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_3ybje")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3ybje")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qsw7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_axac1")
+}],
+"loop": false,
+"name": &"night",
+"speed": 3.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -117,10 +182,20 @@ script = ExtResource("1_1picq")
 [node name="main_bg" type="AnimatedSprite2D" parent="."]
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_3mxyr")
-animation = &"openeyes"
+animation = &"closeeyes"
 
 [node name="text" type="AnimatedSprite2D" parent="."]
 modulate = Color(0.15686275, 0.21176471, 0.09411765, 1)
 position = Vector2(963, 546)
 sprite_frames = SubResource("SpriteFrames_vil18")
-animation = &"sleep"
+animation = &"shout_name"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(949, 573)
+limit_left = 0
+limit_top = 0
+limit_right = 1920
+limit_bottom = 1080
+position_smoothing_enabled = true
+position_smoothing_speed = 0.3
+script = ExtResource("21_qsw7q")
