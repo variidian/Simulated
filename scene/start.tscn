@@ -1,0 +1,125 @@
+[gd_scene load_steps=19 format=3 uid="uid://ceqy8exj41wyf"]
+
+[ext_resource type="Script" uid="uid://bu8m0e6gfmk0s" path="res://scene/start.gd" id="1_1picq"]
+[ext_resource type="Texture2D" uid="uid://cmmfj12rkhysg" path="res://simulated-assests/Untitled_Artwork(1).png" id="1_srnb1"]
+[ext_resource type="Texture2D" uid="uid://gdda0qaj7ali" path="res://simulated-assests/Untitled_Artwork.png" id="2_7xr4q"]
+[ext_resource type="Texture2D" uid="uid://b0ik5fxhf2fnx" path="res://simulated-assests/Untitled_Artwork(2).png" id="3_w484r"]
+[ext_resource type="Texture2D" uid="uid://kvosoi8iqhb" path="res://simulated-assests/Untitled_Artwork-1(1).png" id="4_pb375"]
+[ext_resource type="Texture2D" uid="uid://b1lboyrerpsq8" path="res://simulated-assests/Untitled_Artwork-1.png" id="4_vil18"]
+[ext_resource type="Texture2D" uid="uid://b1ocscnjfgrp5" path="res://simulated-assests/Untitled_Artwork-2.png" id="5_1picq"]
+[ext_resource type="Texture2D" uid="uid://dskjq645ryib6" path="res://simulated-assests/Untitled_Artwork-2(1).png" id="5_pum5v"]
+[ext_resource type="Texture2D" uid="uid://8ch283wq6nh5" path="res://simulated-assests/Untitled_Artwork-3.png" id="6_ik5t3"]
+[ext_resource type="Texture2D" uid="uid://bp8om3our36fa" path="res://simulated-assests/Untitled_Artwork-3(1).png" id="6_qymjl"]
+[ext_resource type="Texture2D" uid="uid://dniwtmfxr1065" path="res://simulated-assests/Untitled_Artwork-4.png" id="7_h10yh"]
+[ext_resource type="Texture2D" uid="uid://62rsdnttvenv" path="res://simulated-assests/Untitled_Artwork-5.png" id="8_hf7vm"]
+[ext_resource type="Texture2D" uid="uid://cvc0i6rvjra4g" path="res://simulated-assests/Untitled_Artwork-6.png" id="9_p7wv6"]
+[ext_resource type="Texture2D" uid="uid://bvvp0h76kjrax" path="res://simulated-assests/Untitled_Artwork-7.png" id="10_3ybje"]
+[ext_resource type="Texture2D" uid="uid://usdfokt3gy3r" path="res://simulated-assests/Untitled_Artwork-8.png" id="11_qsw7q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lrosg"]
+atlas = ExtResource("1_srnb1")
+region = Rect2(0, 0, 1920, 1080)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3mxyr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lrosg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7xr4q")
+}],
+"loop": true,
+"name": &"house",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_w484r")
+}],
+"loop": true,
+"name": &"openeyes",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vil18"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_vil18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vil18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vil18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vil18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1picq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1picq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1picq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qymjl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qymjl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_h10yh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_hf7vm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_p7wv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3ybje")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qsw7q")
+}],
+"loop": true,
+"name": &"shout_name",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_pb375")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pum5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ik5t3")
+}],
+"loop": true,
+"name": &"sleep",
+"speed": 3.0
+}]
+
+[node name="start" type="Node2D"]
+script = ExtResource("1_1picq")
+
+[node name="main_bg" type="AnimatedSprite2D" parent="."]
+position = Vector2(960, 540)
+sprite_frames = SubResource("SpriteFrames_3mxyr")
+
+[node name="text" type="AnimatedSprite2D" parent="."]
+position = Vector2(963, 546)
+sprite_frames = SubResource("SpriteFrames_vil18")
+animation = &"sleep"
+frame_progress = 0.3214137

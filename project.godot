@@ -11,16 +11,23 @@ config_version=5
 [application]
 
 config/name="simulated"
+run/main_scene="uid://ceqy8exj41wyf"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+global="*res://scene/start.tscn"
 
 [dialogue_manager]
 
 runtime/balloon_path="res://scene/balloon.tscn"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 
 [editor_plugins]
 
