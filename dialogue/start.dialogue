@@ -4,16 +4,19 @@ Ivy: Hey! Clover - you have to wake up! Mom said to get back before dark.
 Clover: ... z..zz..zzzz 
 #snore zzzz animation?
 - Wake up Clover with a shout.
+	do global.shout.emit(shout_name)
 	Ivy: CLOVER!!
+	
 	#shout words get bigger type animation?
 - Let clover sleep.
 	Ivy: Ugh. i'll let you sleep - for now. 
 	Ivy: ... .... .. An hour passes.
 	Ivy: ..
+	do global.shout.emit(shout_name)
 	Ivy: CLOVER!! 
 	# shout words get bigger animation
 Ivy: PLEASE wake up. You did this yesterday too you're -
-do global.eye()
+do global.eyes.emit(open_eyes)
 Clover: Hueh?
 Ivy: just always falling asleep.
 Clover: I'm sorry. 

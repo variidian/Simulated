@@ -92,7 +92,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("11_qsw7q")
 }],
-"loop": true,
+"loop": false,
 "name": &"shout_name",
 "speed": 8.0
 }, {
@@ -121,5 +121,6 @@ sprite_frames = SubResource("SpriteFrames_3mxyr")
 [node name="text" type="AnimatedSprite2D" parent="."]
 position = Vector2(963, 546)
 sprite_frames = SubResource("SpriteFrames_vil18")
-animation = &"sleep"
-frame_progress = 0.3214137
+animation = &"shout_name"
+frame = 13
+frame_progress = 1.0

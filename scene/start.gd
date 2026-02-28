@@ -6,13 +6,10 @@ func _ready() -> void:
 	DialogueManager.show_dialogue_balloon(starting_dialogue, "start")
 	main_bg_changes.play("default")
 	text_changes.play("sleep")
-	print("_ready ran")
-	print("READY instance:", self)
-func eye():
-	print("ran 'eye'")
+	global.eyes.connect(open_eyes)
+	global.shout.connect(shout_name)
+func open_eyes(_data = null):
 	main_bg_changes.play("openeyes")
-	text_changes.stop()
-	print("self:", self)
-	print("in tree:", is_inside_tree())
-	print("visible:", visible)
-	print("parent:", get_parent())
+	text_changes.hide()
+func shout_name(_data = null):
+	text_changes.play("shout_name")
