@@ -33,12 +33,15 @@ Ivy: Welp. here we are.
 	Ivy: Anyways, wheres mom gone? She should be here. 
 	Clover: ...She went out to the grocery store. Just wait a while, i'm sure she'll be back soon.
 	Ivy [internally]: What? how would you know that if you were asleep?
-	Ivy: Well- if we have the time for it- Can we go out to the city?
+Ivy: Anyways, unrelated question..
+Ivy: Do you ever wonder what it would be like to be trapped in a simulation? 
+Clover: ..hm. They do sound pretty cool.
+Ivy: Anyways- Well- if we have the time for it- Can we go out to the city? I'd like out of this place.
 #flash to a city skyline and back?
 Clover: .....
 Clover: ..I think its better if we didn't...
 - No!
-	Ivy: .. .nono, i think its a great idea.  let's go!
+	Ivy: .. .nono, i think its a great idea.  let's go! Please?
 	Clover: .. ....
 	Clover: Actually, the metro station is closed today.
 	Ivy: Oh, don't worry about it. I'm sure we can get to a bus stop then take a train-
@@ -49,25 +52,88 @@ Clover: ..I think its better if we didn't...
 	Ivy: Uhh.. Okay? thats not really the answer i was looking for..
 do global.night.emit(to_night)
 Narrator: It passes into the night.
-Ivy: Sigh. lets hope we can go out tomorrow in the day time.
+Ivy [internally]: Sigh. lets hope we can go out tomorrow in the day time.
+Ivy: Clover, do you ever feel like you're trapped? It's just not it here-
+Clover: No. Absolutely not.
 do global.day.emit(to_day)
 Narrator: It passes into the day.
-Ivy: Can we go to the city today, Clover?
+- Can we go out?
+	Ivy: Can we go to the city today, Clover?
+- What are we doing today?
+	Ivy: Hey Clover. Anything happening today? 
+	Ivy: ... Any, city plans, persay?
 Clover: Nonono, Its pretty dangerous to drive a car over there- 
-Ivy: I'll be careful.
+Ivy: I'll be careful. I just want out of this- suffocating place- it just feels like i can't breathe sometimes. like a simulation.
 Clover: ..Just trust me.
 Ivy: .. ...
 Ivy [internally]: what's happening? why won't she let me go out of town with her? ... Surely something is wrong.
 do global.eyes.emit(open_eyes)
-Ivy: Clover, are you okay? What's wrong? 
-Clover: Hueh? ... .. Nothing's wrong. I'm just scared for your safety. Lots of robbers these days-
-Ivy: No, im sure you were just talking about cars-
-do global.eyes1.emit(close_eyes)
-Clover: No no, i'm pretty sure i said robbers.
+- What's wrong?
+	Ivy: Clover, are you okay? What's wrong? 
+- Clover.
+	Ivy: Clover! What are you hiding from me?
+Clover: Hueh? ... .. Nothing.. I'm just scared for your safety. Lots of robbers these days-
+- That's not what you said
+	Ivy: No, im sure you were just talking about cars-
+	do global.eyes1.emit(close_eyes)
+	Clover: No no, i'm pretty sure i said robbers.
+- That doesn't make any sense.
+	Ivy: There aren't even that many robbers around anymore, what do you mean?
+	do global.eyes1.emit(close_eyes)
+	Clover: There are lots.
 Ivy [internally]: she's going to tell me to trust her isn't she-
 Clover: .. ..Trust me.
-Ivy: Hmph. ..... Welp, i'm going to the city whether you like it or not. 
-Clover: 
+Ivy: Hmph. ..... Welp, i'm going to the city whether you like it or not. I feel so trapped here, anyways.
+Clover: Huh? trapped?
+Ivy: I said this yesterday. 
+Ivy: Like.. I'm trapped in a simulation or something. The days don't align. Our memories are off. Objects are misplaced. Do you think we are?
+do global.eyes.emit(open_eyes)
+Clover: No- no- of course not. To be honest, i think i feel perfectly free.
+do global.house.emit(to_house)
+Ivy: ..... ..
+Ivy: Well, i'm going now- this house in the woods is not enough for me.
+Clover: Please no-
+Ivy: ..
+Ivy: huh- why can't i move-
+Clover: I'm sorry Ivy- This is for the best.
+Ivy: What is? ..
+Ivy: What did you do?! 
+do global.eyes1.emit(close_eyes)
+Clover: I can't let you escape.
+Ivy: Wha-?
+Clover: .. ...
+Clover:...
+Ivy: ..
+Ivy: .. Are you controlling me?... I am in a simulation?
+Ivy: .... I will not let this happen. 
+- throw water
+	Narrator: you throw a handful of water at Clover. 
+	Ivy: How's that?
+	do global.eyes.emit(open_eyes)
+	Clover: .. A pitiful attempt at hurting me.
+	Narrator: Clover throws a punch back at you.
+	Ivy: Ow. 
+	Narrator: you throw water at her again. 
+	Narrator: She throws a punch. 
+	Ivy: Okay okay! i surrender.
+	Narrator: Game end on: Bad ending.
+- punch
+	do global.eyes.emit(open_eyes)
+	Narrator: You throw a punch. 
+	Clover: Ow. 
+	Narrator: She throws water back at you. 
+	Ivy: Not gonna lie, that didn't do anything.
+	Narrator: You throw a punch again.
+	Clover: Okay okay! i surrender.
+	Ivy: Please, how do i get out of this sim?
+	Clover: .....
+	Narrator: Game end.
+- do nothing
+	Narrator: You do nothing.
+	do global.eyes.emit(open_eyes)
+	Narrator: Clover throws a flurry of punches at you. 
+	Ivy: Okay okay! i surrender.
+	Narrator: Game end on: Bad ending.
 
 #try leave -> clover freezes ivy -> initiate attacks n combat <3
 => END
